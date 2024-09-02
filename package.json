@@ -21,6 +21,7 @@
       }
     ]
   },
+  "publisher": "npmstart123",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
