@@ -9,13 +9,15 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:extension.removeAllDebuggers"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "debugger-wipe.helloWorld",
-        "title": "Hello World"
+        "command": "extension.removeAllDebuggers",
+        "title": "Remove All Debuggers"
       }
     ]
   },
