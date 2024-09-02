@@ -2,7 +2,7 @@
   "name": "debugger-wipe",
   "displayName": "Debugger Wipe",
   "description": "A simple extension to remove all 'debugger' statements from your project",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.92.0"
   },
@@ -10,7 +10,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.removeAllDebuggers"
+    "onCommand:extension.removeAllDebuggers",
+    "onCommand:extension.commentAllDebuggers"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -18,16 +19,26 @@
       {
         "command": "extension.removeAllDebuggers",
         "title": "Remove All Debuggers"
+      },
+      {
+        "command": "extension.commentAllDebuggers",
+        "title": "Comment All Debuggers"
       }
     ],
     "keybindings": [
-    {
-      "command": "extension.removeAllDebuggers",
-      "key": "ctrl+shift+d",
-      "mac": "cmd+shift+d",
-      "when": "editorTextFocus"
-    }
-  ]
+      {
+        "command": "extension.removeAllDebuggers",
+        "key": "ctrl+shift+d",
+        "mac": "cmd+shift+d",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.commentAllDebuggers",
+        "key": "ctrl+shift+s",
+        "mac": "cmd+shift+s",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "publisher": "npmstart123",
   "scripts": {
