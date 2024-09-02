@@ -19,7 +19,15 @@
         "command": "extension.removeAllDebuggers",
         "title": "Remove All Debuggers"
       }
-    ]
+    ],
+    "keybindings": [
+    {
+      "command": "extension.removeAllDebuggers",
+      "key": "ctrl+shift+d",
+      "mac": "cmd+shift+d",
+      "when": "editorTextFocus"
+    }
+  ]
   },
   "publisher": "npmstart123",
   "scripts": {
