@@ -24,8 +24,8 @@ To make using the Debugger Wipe more convenient, you can assign a keyboard short
 
 ## Support
 
-If you encounter any issues, please report them at [issue tracker link] or contact support at [support email].
+If you encounter any issues, please report them at [issue tracker link] or contact support at npmstart2@gmail.com.
 
 ## License
 
-This extension is licensed under [Your License].
+This extension is licensed under npm-start.
