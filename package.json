@@ -11,7 +11,9 @@
   ],
   "activationEvents": [
     "onCommand:extension.removeAllDebuggers",
-    "onCommand:extension.commentAllDebuggers"
+    "onCommand:extension.commentAllDebuggers",
+    "onCommand:extension.restoreDebuggers"
+
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -23,6 +25,10 @@
       {
         "command": "extension.commentAllDebuggers",
         "title": "Comment All Debuggers"
+      },
+      {
+        "command": "extension.restoreDebuggers",
+        "title": "Restore Debuggers"
       }
     ],
     "keybindings": [
@@ -36,6 +42,12 @@
         "command": "extension.commentAllDebuggers",
         "key": "ctrl+shift+s",
         "mac": "cmd+shift+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.restoreDebuggers",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
         "when": "editorTextFocus"
       }
     ]
